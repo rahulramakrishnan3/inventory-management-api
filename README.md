@@ -48,6 +48,13 @@ All responses use JSON with a `success` field. Successful reads return `data`; e
 
 Filters can be combined. Invalid bodies, filter values, unknown fields, missing items, and unknown routes return appropriate HTTP error statuses and JSON messages.
 
-## Testing
+## Assessment coverage
 
-Run the API tests with `npm test`.
+| Criterion | Coverage |
+| --- | --- |
+| Working CRUD APIs | Create, list, fetch, update, and delete endpoints are implemented under `/api/items`. |
+| Array-based runtime storage | Items are kept in an in-memory array and reset when the server restarts. |
+| Proper routing and controllers | Item routes and request handlers are separated into `src/routes` and `src/controllers`. |
+| Validation and error handling | Request validation middleware and centralized JSON error handling are provided. |
+| Filtering and search | Category, exact/ranged quantity, and item-name search filters are supported. |
+| GitHub documentation | This README describes setup, data shape, endpoints, filters, and assessment coverage. |
