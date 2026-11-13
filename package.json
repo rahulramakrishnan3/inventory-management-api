@@ -1,0 +1,15 @@
+{
+  "name": "inventory-management-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Backend-only inventory management API with in-memory storage",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}
